@@ -39,7 +39,7 @@ rl.on('close', () => {
     }
     //console.log(prefectureDataMap);
     const rankingArray = Array.from(prefectureDataMap).sort((pair1, pair2) => {
-        return pair2[1].change - pair1[1].change;
+        return pair2[1].change - pair1[1].change; // increase order
     });
     //console.log(rankingArray);
     const rankingStrings = rankingArray.map(([key, value]) => {
